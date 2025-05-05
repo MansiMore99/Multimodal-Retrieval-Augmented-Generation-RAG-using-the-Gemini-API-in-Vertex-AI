@@ -35,14 +35,6 @@ rich
 colorama
 ```
 
-## 📓 Setup Instructions
-
-🔧 Task 1: Open the Notebook in Vertex AI Workbench
-Go to the Google Cloud Console.
-
-Navigate to Vertex AI > Workbench.
-
-Click on your instance name and open JupyterLab.
 
 ## 📓 Setup Instructions
 
@@ -69,8 +61,13 @@ Click on your instance name and open JupyterLab.
 ### 🤖 Task 3: Use the Gemini Flash Model
 
 1. Load the **Gemini 2.0 Flash** model (`gemini-2.0-flash`) in the notebook.
-2. Download the helper functions (`intro_multimodal_rag_utils.py`) to simplify the workflow.
-3. Retrieve sample documents and images from Google Cloud Storage.
+```
+text_model = GenerativeModel("gemini-2.0-flash")
+multimodal_model = GenerativeModel("gemini-2.0-flash")
+multimodal_model_flash = GenerativeModel("gemini-2.0-flash")
+```
+3. Download the helper functions (`intro_multimodal_rag_utils.py`) to simplify the workflow.
+4. Retrieve sample documents and images from Google Cloud Storage.
 
 ---
 
