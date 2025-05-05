@@ -38,6 +38,17 @@ rich
 colorama
 ```
 
+### Import the helper functions to implement RAG:
+
+You will be importing the following functions which will be used in the remainder of this notebook to implement RAG:
+
+* **get_similar_text_from_query():** Given a text query, finds text from the document which are relevant, using cosine similarity algorithm. It uses text embeddings from the metadata to compute and the results can be filtered by top score, page/chunk number, or embedding size.
+* **print_text_to_text_citation():** Prints the source (citation) and details of the retrieved text from the `get_similar_text_from_query()` function.
+* **get_similar_image_from_query():** Given an image path or an image, finds images from the document which are relevant. It uses image embeddings from the metadata.
+* **print_text_to_image_citation():** Prints the source (citation) and the details of retrieved images from the `get_similar_image_from_query()` function.
+* **get_gemini_response():** Interacts with a Gemini model to answer questions based on a combination of text and image inputs.
+* **display_images():**  Displays a series of images provided as paths or PIL Image objects.
+
 
 ## 📓 Setup Instructions
 
